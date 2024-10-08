@@ -1,28 +1,52 @@
-<script>
-    fetch('https://raw.githubusercontent.com/EchoStudioss/rules/main/rules.json')
-        .then(response => response.json())
-        .then(data => {
-            const rulesContainer = document.getElementById('rules-container');
-            rulesContainer.innerHTML = '';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stealth Rules</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        h2 { color: #555; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StealthRP Rules</h1>
+    </header>
+    <main id="rules-container">
+        <p>Loading rules...</p>
+    </main>
 
-            Object.keys(data.rules).forEach(category => {
-                const section = document.createElement('section');
-                const title = document.createElement('h2');
-                title.textContent = category.charAt(0).toUpperCase() + category.slice(1);
-                section.appendChild(title);
-                
-                const list = document.createElement('ul');
-                data.rules[category].forEach(rule => {
-                    const listItem = document.createElement('li');
-                    listItem.innerHTML = `<strong>${rule.title}:</strong> ${rule.description}`;
-                    list.appendChild(listItem);
+    <script>
+        fetch('https://raw.githubusercontent.com/EchoStudioss/rules/main/rules.json')
+            .then(response => response.json())
+            .then(data => {
+                const rulesContainer = document.getElementById('rules-container');
+                rulesContainer.innerHTML = '';
+
+                Object.keys(data.rules).forEach(category => {
+                    const section = document.createElement('section');
+                    const title = document.createElement('h2');
+                    title.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+                    section.appendChild(title);
+                    
+                    const list = document.createElement('ul');
+                    data.rules[category].forEach(rule => {
+                        const listItem = document.createElement('li');
+                        listItem.innerHTML = `<strong>${rule.title}:</strong> ${rule.description}`;
+                        list.appendChild(listItem);
+                    });
+                    section.appendChild(list);
+                    rulesContainer.appendChild(section);
                 });
-                section.appendChild(list);
-                rulesContainer.appendChild(section);
+            })
+            .catch(error => {
+                document.getElementById('rules-container').textContent = 'Error loading rules.';
+                console.error('Error fetching JSON:', error);
             });
-        })
-        .catch(error => {
-            document.getElementById('rules-container').textContent = 'Error loading rules.';
-            console.error('Error fetching JSON:', error);
-        });
-</script>
+    </script>
+</body>
+</html>
