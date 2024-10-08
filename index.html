@@ -25,22 +25,22 @@
             .then(response => response.json())
             .then(data => {
                 const rulesContainer = document.getElementById('rules-container');
-                rulesContainer.innerHTML = '';
+                rulesContainer.innerHTML = '';  // Clear initial loading message
 
-                Object.keys(data.rules).forEach(category => {
-                    const section = document.createElement('section');
+                data.forEach(section => {
+                    // Create section header
                     const title = document.createElement('h2');
-                    title.textContent = category.charAt(0).toUpperCase() + category.slice(1);
-                    section.appendChild(title);
-                    
+                    title.textContent = section.title;
+                    rulesContainer.appendChild(title);
+
+                    // Create the list of rules
                     const list = document.createElement('ul');
-                    data.rules[category].forEach(rule => {
+                    section.rules.forEach(rule => {
                         const listItem = document.createElement('li');
-                        listItem.innerHTML = `<strong>${rule.title}:</strong> ${rule.description}`;
+                        listItem.textContent = rule; // Since rule is just text in this case
                         list.appendChild(listItem);
                     });
-                    section.appendChild(list);
-                    rulesContainer.appendChild(section);
+                    rulesContainer.appendChild(list);
                 });
             })
             .catch(error => {
