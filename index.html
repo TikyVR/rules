@@ -21,7 +21,7 @@
     </main>
 
     <script>
-        fetch('https://raw.githubusercontent.com/EchoStudioss/rules/main/rules.json')
+        fetch('./rules.json')
             .then(response => response.json())
             .then(data => {
                 const rulesContainer = document.getElementById('rules-container');
