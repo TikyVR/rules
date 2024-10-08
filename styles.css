@@ -5,93 +5,152 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
 }
 
+/* Header Styling */
 header {
     text-align: center;
-    padding: 30px 0;
-    background-color: #2c3e50;
+    padding: 40px 0;
+    background-color: #1f3a52; /* Darker, trendier color */
     color: white;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    animation: slideDown 1s ease-out; /* Header animation */
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #ff6b6b; /* Modern hover color effect */
+}
+
+/* Main Section Styling */
+main {
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    animation: fadeIn 0.7s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+main:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
 }
 
 h2 {
-    font-size: 1.75em;
-    color: #34495e;
-    margin-bottom: 15px;
-    border-left: 4px solid #e74c3c;
-    padding-left: 10px;
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-left: 6px solid #e74c3c; /* Thicker, vibrant border */
+    padding-left: 15px;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Main Styling */
-main {
-    max-width: 800px;
-    margin: 50px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+h2:hover {
+    color: #e74c3c; /* Color change on hover */
+    border-left-color: #ff7979; /* Softer border on hover */
 }
 
+/* List Styling */
 ul {
     list-style-type: none;
     padding-left: 0;
 }
 
 li {
-    margin: 10px 0;
-    font-size: 1.1em;
-    padding: 10px;
-    background-color: #ecf0f1;
-    border-left: 4px solid #2ecc71;
-    border-radius: 4px;
+    margin: 12px 0;
+    font-size: 1.2em;
+    padding: 15px;
+    background-color: #f0f4f7; /* Softer background color */
+    border-left: 5px solid #2ecc71; /* More defined border */
+    border-radius: 6px;
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
 }
 
 li:hover {
-    background-color: #dfe6e9;
-    transform: scale(1.02);
+    background-color: #e0e7ec; /* Softer hover background */
+    transform: scale(1.03); /* Slightly larger hover effect */
     border-left-color: #27ae60;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
 
     main {
-        padding: 15px;
+        padding: 20px;
     }
 
     li {
         font-size: 1em;
+        padding: 12px;
     }
 }
 
-/* Custom Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+/* Custom Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2c3e50;
+        color: #ecf0f1;
     }
-    to {
-        opacity: 1;
-    }
-}
 
-main {
-    animation: fadeIn 0.5s ease-in;
+    header {
+        background-color: #1c2833;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+        background-color: #34495e;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    li {
+        background-color: #3a5068;
+        border-left-color: #27ae60;
+    }
+
+    li:hover {
+        background-color: #2c3e50;
+    }
 }
