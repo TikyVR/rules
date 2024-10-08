@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stealth Rules</title>
-    <!-- Link to the external CSS file -->
     <link fetch('./styles.css')>
 </head>
-
-<body class="font-sans bg-gray-100 text-gray-800 m-0 p-0">
-
-    <!-- Header -->
+<body>
     <header>
         <h1>StealthRP Rules</h1>
     </header>
-
-    <!-- Main content -->
     <main id="rules-container">
-        <p class="loading-message">Loading rules...</p>
+        <p>Loading rules...</p>
     </main>
 
-    <!-- Script to fetch and display the rules from JSON -->
     <script>
         fetch('./rules.json')
             .then(response => response.json())
@@ -33,16 +25,13 @@
                     // Create section header
                     const title = document.createElement('h2');
                     title.textContent = section.title;
-                    title.className = "section-title";
                     rulesContainer.appendChild(title);
 
                     // Create the list of rules
                     const list = document.createElement('ul');
-                    list.className = "rules-list"; // Add spacing between list items
                     section.rules.forEach(rule => {
                         const listItem = document.createElement('li');
-                        listItem.textContent = rule;
-                        listItem.className = "rule-item";
+                        listItem.textContent = rule; // Since rule is just text in this case
                         list.appendChild(listItem);
                     });
                     rulesContainer.appendChild(list);
@@ -54,5 +43,4 @@
             });
     </script>
 </body>
-
 </html>
