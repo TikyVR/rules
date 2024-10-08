@@ -1,111 +1,134 @@
 /* Global Styling */
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Poppins', 'Open Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f0f4f8;
     color: #333;
     line-height: 1.6;
-    transition: background-color 0.3s ease;
 }
 
-/* Header Styling */
+/* Hero Header Styling */
 header {
     text-align: center;
-    padding: 40px 0;
-    background-color: #1f3a52; /* Darker, trendier color */
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
     color: white;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
-    animation: slideDown 1s ease-out; /* Header animation */
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+    position: relative;
 }
 
-h1 {
-    font-size: 3em;
-    font-weight: bold;
-    letter-spacing: 2px;
+header h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    letter-spacing: 3px;
     text-transform: uppercase;
     margin: 0;
-    transition: color 0.3s ease-in-out;
+    animation: fadeInDown 1s ease-in-out;
 }
 
-h1:hover {
-    color: #ff6b6b; /* Modern hover color effect */
+/* Subheading Animation */
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-/* Main Section Styling */
+header:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: #f1c40f;
+    border-radius: 2px;
+}
+
+/* Main Styling */
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 60px auto;
     background-color: white;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
     animation: fadeIn 0.7s ease-in-out;
-    transition: transform 0.3s ease;
 }
 
 main:hover {
-    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.9em;
     color: #2c3e50;
     margin-bottom: 20px;
-    border-left: 6px solid #e74c3c; /* Thicker, vibrant border */
     padding-left: 15px;
+    border-left: 5px solid #e74c3c;
     text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
 }
 
 h2:hover {
-    color: #e74c3c; /* Color change on hover */
-    border-left-color: #ff7979; /* Softer border on hover */
+    border-left-color: #f39c12;
 }
 
-/* List Styling */
 ul {
     list-style-type: none;
     padding-left: 0;
 }
 
 li {
-    margin: 12px 0;
+    margin: 15px 0;
     font-size: 1.2em;
     padding: 15px;
-    background-color: #f0f4f7; /* Softer background color */
-    border-left: 5px solid #2ecc71; /* More defined border */
-    border-radius: 6px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #2ecc71;
+    border-radius: 5px;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 li:hover {
-    background-color: #e0e7ec; /* Softer hover background */
-    transform: scale(1.03); /* Slightly larger hover effect */
+    background-color: #dfe6e9;
+    transform: translateY(-5px);
     border-left-color: #27ae60;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Button Styling (if needed) */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-@keyframes slideDown {
-    from {
-        transform: translateY(-100px);
-    }
-    to {
-        transform: translateY(0);
-    }
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #34495e;
+    color: white;
+    font-size: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
 
 /* Responsive Design */
@@ -115,42 +138,28 @@ li:hover {
     }
 
     h2 {
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
 
     main {
         padding: 20px;
+        margin: 40px 20px;
     }
 
     li {
         font-size: 1em;
-        padding: 12px;
-    }
-}
-
-/* Custom Dark Mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #2c3e50;
-        color: #ecf0f1;
     }
 
     header {
-        background-color: #1c2833;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 60px 20px;
     }
+}
 
-    main {
-        background-color: #34495e;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-
-    li {
-        background-color: #3a5068;
-        border-left-color: #27ae60;
-    }
-
-    li:hover {
-        background-color: #2c3e50;
+    to {
+        opacity: 1;
     }
 }
