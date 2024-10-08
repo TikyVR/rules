@@ -11,7 +11,7 @@
       "It is important to refrain from influencing or encouraging others to break the rules. Such behavior can have consequences, and you may receive a similar punishment for your actions.",
       "Real-life events, including suicide roleplay, terrorism threats, pandemics, and mental illnesses, are strictly prohibited within the city. We prioritize the well-being and safety of our community members and strive to provide an enjoyable and inclusive environment. We kindly request that you refrain from incorporating or depicting such sensitive topics in your roleplay.",
       "Roleplay should continue unless all parties involved in the scene or situation agree to pause or stop it. It is important to respect the consent and comfort of all participants. If there is a disagreement or discomfort during roleplay, it is essential to communicate openly and reach a consensus among all involved parties.",
-      "It is strictly prohibited to use explicit or offensive names on any EchoRP platforms.",
+      "It is strictly prohibited to use explicit or offensive names on any StealthRP platforms.",
       "We have a zero-tolerance policy towards racism, trolling, discrimination, homophobia, and sexism within our community.",
       "Treat each other with respect, everyone is equal.",
       "The use of derogatory terms, including but not limited to the word “retard”, is strictly prohibited within our community.",
@@ -88,7 +88,7 @@
       "Exploiting client or server bugs is strictly prohibited within our community. Engaging in such activities, including the abuse of exploits, will result in a ban from the server. Additionally, any benefits or items gained from exploiting will be promptly removed.",
       "Camping animal and vehicle spawns, where players repeatedly wait in a known spot for the specific purpose of exploiting their appearance, is considered a form of exploitation within our community. We encourage a more natural and immersive gameplay experience where encounters occur organically. Engaging in repetitive behavior solely for the purpose of exploiting spawns disrupts the intended balance and fairness of the game. We kindly request that players refrain from such practices and allow the game to unfold naturally, fostering a more dynamic and authentic environment for everyone.",
       "Circumventing the emote cooldown by using the F8 menu or any other method is not allowed.",
-      "All bugs must be reported on our Github Feedback Repository (https://github.com/echoroleplay/feedback)!"
+      "All bugs must be reported on our Github Feedback Repository (https://github.com/stealthroleplay/feedback)!"
     ]
   },
   {
@@ -157,7 +157,7 @@
     "rules": [
       "Gangs within our community are not solely focused on engaging in constant conflicts and violence. We encourage players to embrace originality and creativity when developing their gang concepts. Gangs can have diverse objectives, such as pursuing specific activities, establishing unique identities, or engaging in cooperative ventures. While conflicts and rivalries can certainly be part of the gang dynamic, there is room for a wide range of storylines and interactions. We encourage players to explore different avenues, allowing for originality and creativity to flourish within the gang roleplay.",
       "The expectation within our community is that players should initiate roleplay and use verbal communication before resorting to shooting or engaging in combat. It is important to prioritize roleplaying and utilize dialogue to resolve conflicts, even if the “beef” or tension arises through social media or other out-of-game platforms. Face-to-face interaction allows for more immersive and engaging roleplay experiences.",
-      "All the necessary information about gangs and the application process can be found in the comprehensive Gang Handbook available at the following link: https://gangbook.echorp.net",
+      "All the necessary information about gangs and the application process can be found in the comprehensive Gang Handbook available at the following link: https://gangbook.StealthRP.net",
       "When attempting to identify or apprehend individuals involved in the job that you are taxing, it is expected that you put in a considerate amount of effort and provide a high-quality roleplay experience for all parties involved. Simply pulling up to a van and aiming guns out of your car while demanding payment does not meet these expectations. It is essential to engage in immersive and realistic roleplay, creating meaningful interactions that enhance the overall experience for everyone involved. By putting effort into your roleplay and providing a high standard of interaction, you contribute to a more enjoyable and engaging environment within the community.",
       "At any time, staff can revoke taxing for a specific job if the overall reward made from taxing an absurd amount.",
       "You may not use gang specific clothing, flags, or liveries that you would not realistically be able to acquire unless they have been obtained through roleplay."
@@ -275,14 +275,14 @@
     "link": "#private_discords",
     "isSubtitle": true,
     "rules": [
-      "All EchoRP-related Discord servers that include in-character channels are required to adhere to all EchoRP Rules and Guidelines. This ensures consistency and a unified approach to roleplaying across various community platforms",
-      "The owner of a private Discord server related to EchoRP must clearly designate and outline which channels are designated as in-character channels.",
-      "Businesses operating within EchoRP are required to place their Discord invite link in the designated documents channel within the Main EchoRP Business Discord.",
-      "Gangs operating within EchoRP are expected to place their Discord invite links in the corresponding sections within the Main EchoRP Gang Discord.",
-      "If requested, staff members may require access to your EchoRP-related Discord server and must be granted administrative access to ensure compliance with the no metagaming rule. Refusal to grant access may have consequences for your business or gang within the community.",
-      "Any Discord server related to EchoRP that has over 100 members must be owned by an EchoRP admin or a staff member with a rank of admin or higher.",
+      "All StealthRP-related Discord servers that include in-character channels are required to adhere to all StealthRP Rules and Guidelines. This ensures consistency and a unified approach to roleplaying across various community platforms",
+      "The owner of a private Discord server related to StealthRP must clearly designate and outline which channels are designated as in-character channels.",
+      "Businesses operating within StealthRP are required to place their Discord invite link in the designated documents channel within the Main StealthRP Business Discord.",
+      "Gangs operating within StealthRP are expected to place their Discord invite links in the corresponding sections within the Main StealthRP Gang Discord.",
+      "If requested, staff members may require access to your StealthRP-related Discord server and must be granted administrative access to ensure compliance with the no metagaming rule. Refusal to grant access may have consequences for your business or gang within the community.",
+      "Any Discord server related to StealthRP that has over 100 members must be owned by an StealthRP admin or a staff member with a rank of admin or higher.",
       "If staff members request screenshots of Discord conversations as evidence for a report, it is the responsibility of the involved parties to provide complete and accurate screenshots of the relevant conversations. Providing proper and full screenshots ensures that the necessary context and details are captured, enabling staff members to assess the situation accurately. By cooperating and providing comprehensive screenshots, we contribute to a fair and thorough investigation process, promoting transparency and effective resolution of reported incidents.",
-      "You are not permitted to remove a staff member who is present in an EchoRP-related Discord server by kicking or banning them unless the staff member is no longer associated with your group or gang. This rule ensures that staff members responsible for supervision and enforcement can fulfill their roles effectively without undue interference."
+      "You are not permitted to remove a staff member who is present in an StealthRP-related Discord server by kicking or banning them unless the staff member is no longer associated with your group or gang. This rule ensures that staff members responsible for supervision and enforcement can fulfill their roles effectively without undue interference."
     ]
   },
   {
@@ -290,14 +290,14 @@
     "link": "#roleplay_quality",
     "isSubtitle": false,
     "rules": [
-      "Cop baiting, intentionally provoking or luring police officers into scenarios without proper roleplay behind it, is considered a form of low-quality roleplay within the EchoRP community. Engaging in cop baiting, such as deliberately causing a collision with a cop car to initiate a chase for the sole purpose of a gunfight or ambush, undermines the immersive and realistic roleplay experience.",
-      "Please avoid engaging in money simulator gameplay, which refers to prioritizing monetary gains over meaningful interactions with other individuals within the EchoRP community. This type of gameplay focuses solely on accumulating wealth without considering the importance of social engagement and roleplay interactions. Let's emphasize the value of engaging with others, building relationships, and creating dynamic and immersive roleplay experiences that go beyond monetary pursuits.",
+      "Cop baiting, intentionally provoking or luring police officers into scenarios without proper roleplay behind it, is considered a form of low-quality roleplay within the StealthRP community. Engaging in cop baiting, such as deliberately causing a collision with a cop car to initiate a chase for the sole purpose of a gunfight or ambush, undermines the immersive and realistic roleplay experience.",
+      "Please avoid engaging in money simulator gameplay, which refers to prioritizing monetary gains over meaningful interactions with other individuals within the StealthRP community. This type of gameplay focuses solely on accumulating wealth without considering the importance of social engagement and roleplay interactions. Let's emphasize the value of engaging with others, building relationships, and creating dynamic and immersive roleplay experiences that go beyond monetary pursuits.",
       "Refusing to respond or cooperate with EMS staff members may lead to consequences, including a possible kick from the server. It is crucial to prioritize roleplaying realistic and immersive scenarios, which includes engaging with EMS staff when necessary. By acknowledging and following the guidelines provided in the linked document (https://docs.google.com/document/d/1s7ptrNFOnhOTY75unmooOu6fpzaQmBBNk9GAQSvoWUo/edit), we ensure a cohesive and enjoyable roleplay experience for all community members.",
-      "We have a strict policy against engaging in salty and toxic behavior within the EchoRP community. This includes actions such as repeatedly shooting a downed body, playing loud or disruptive music, screaming excessively over the microphone, spitting on or emoting disrespectfully towards downed bodies, engaging in disruptive spinning, and involving oneself in unnecessary Twitter drama.",
+      "We have a strict policy against engaging in salty and toxic behavior within the StealthRP community. This includes actions such as repeatedly shooting a downed body, playing loud or disruptive music, screaming excessively over the microphone, spitting on or emoting disrespectfully towards downed bodies, engaging in disruptive spinning, and involving oneself in unnecessary Twitter drama.",
       "Hospital camping, which refers to intentionally waiting or lingering near a hospital to taunt or provoke players who have recently lost a fight, is not permitted.",
-      "Scenes in EchoRP should be utilized to enhance roleplay by providing context and atmosphere.",
+      "Scenes in StealthRP should be utilized to enhance roleplay by providing context and atmosphere.",
       "During interactions with police officers, it is essential for criminals to provide a valid and proper reasoning during initiation before resorting to shooting. This includes situations where there may be heightened tensions or increased conflicts, such as during mag dump season.",
-      "Randomly blowing up vehicles without proper initiation is strictly prohibited within EchoRP."
+      "Randomly blowing up vehicles without proper initiation is strictly prohibited within StealthRP."
     ]
   },
   {
