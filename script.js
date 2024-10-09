@@ -14,7 +14,7 @@ document.querySelectorAll('.tab-button').forEach(button => {
 });
 
 // Fetching and displaying the rules
-fetch('./rules.json')
+fetch('rules.json')
     .then(response => response.json())
     .then(data => {
         const rulesContainer = document.getElementById('rules-container');
@@ -40,7 +40,7 @@ fetch('./rules.json')
     });
 
 // Fetching and displaying the roadmap
-fetch('./roadmap.json')
+fetch('roadmap.json')
     .then(response => response.json())
     .then(data => {
         const columns = {
