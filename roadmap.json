@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Implement User Registration",
+        "status": "To Do"
+    },
+    {
+        "title": "Add Chat Functionality",
+        "status": "In Progress"
+    },
+    {
+        "title": "Deploy Initial Version",
+        "status": "Completed"
+    }
+]
