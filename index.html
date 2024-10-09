@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stealth Rules</title>
-    <!-- Importing Google Fonts for professional typography -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans&family=Oswald:wght@400&display=swap" rel="stylesheet">
-    <!-- Linking to your CSS file statically -->
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -15,6 +13,12 @@
     </header>
 
     <main id="rules-container">
+        <h2>Roadmap</h2>
+        <div id="roadmap">
+            <div class="column" id="todo"><h3>To Do</h3></div>
+            <div class="column" id="in-progress"><h3>In Progress</h3></div>
+            <div class="column" id="completed"><h3>Completed</h3></div>
+        </div>
         <p>Loading rules...</p>
     </main>
 
@@ -22,34 +26,15 @@
         <p>&copy; 2024 StealthRP. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        // Fetching and displaying the rules
-        fetch('./rules.json')
-            .then(response => response.json())
-            .then(data => {
-                const rulesContainer = document.getElementById('rules-container');
-                rulesContainer.innerHTML = '';  // Clear initial loading message
+    <div id="feedback-panel">
+        <h3>Feedback</h3>
+        <form id="feedback-form">
+            <textarea rows="4" placeholder="Your feedback..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
-                data.forEach(section => {
-                    // Create section header
-                    const title = document.createElement('h2');
-                    title.textContent = section.title;
-                    rulesContainer.appendChild(title);
-
-                    // Create the list of rules
-                    const list = document.createElement('ul');
-                    section.rules.forEach(rule => {
-                        const listItem = document.createElement('li');
-                        listItem.textContent = rule; // Since rule is just text in this case
-                        list.appendChild(listItem);
-                    });
-                    rulesContainer.appendChild(list);
-                });
-            })
-            .catch(error => {
-                document.getElementById('rules-container').textContent = 'Error loading rules.';
-                console.error('Error fetching JSON:', error);
-            });
-    </script>
+    <script src="./scripts.js"></script>
 </body>
 </html>
+
