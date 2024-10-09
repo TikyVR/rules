@@ -3,49 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StealthRP Dashboard</title>
+    <title>Stealth Rules</title>
+    <!-- Importing Google Fonts for professional typography -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans&family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <!-- Linking to your CSS file statically -->
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
-        <h1>StealthRP Dashboard</h1>
+        <h1>StealthRP Rules</h1>
     </header>
 
-    <nav class="tabs">
-        <button class="tab-button active" data-tab="rules">Rules</button>
-        <button class="tab-button" data-tab="roadmap">Roadmap</button>
-        <button class="tab-button" data-tab="feedback">Feedback</button>
-    </nav>
-
-    <main>
-        <section id="rules" class="tab-content active">
-            <h2>Rules</h2>
-            <div id="rules-container">
-                <p>Loading rules...</p>
-            </div>
-        </section>
-
-        <section id="roadmap" class="tab-content">
-            <h2>Roadmap</h2>
-            <div id="roadmap">
-                <div class="column" id="todo"><h3>To Do</h3></div>
-                <div class="column" id="in-progress"><h3>In Progress</h3></div>
-                <div class="column" id="completed"><h3>Completed</h3></div>
-            </div>
-        </section>
-
-        <section id="feedback" class="tab-content">
-            <h2>Feedback</h2>
-            <div id="feedback-panel">
-                <form id="feedback-form">
-                    <textarea rows="4" placeholder="Your feedback..." required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </section>
+    <main id="rules-container">
+        <p>Loading rules...</p>
     </main>
 
-    <script src="./scripts.js"></script>
+    <footer>
+        <p>&copy; 2024 StealthRP. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Fetching and displaying the rules
+        fetch('./rules.json')
+            .then(response => response.json())
+            .then(data => {
+                const rulesContainer = document.getElementById('rules-container');
+                rulesContainer.innerHTML = '';  // Clear initial loading message
+
+                data.forEach(section => {
+                    // Create section header
+                    const title = document.createElement('h2');
+                    title.textContent = section.title;
+                    rulesContainer.appendChild(title);
+
+                    // Create the list of rules
+                    const list = document.createElement('ul');
+                    section.rules.forEach(rule => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = rule; // Since rule is just text in this case
+                        list.appendChild(listItem);
+                    });
+                    rulesContainer.appendChild(list);
+                });
+            })
+            .catch(error => {
+                document.getElementById('rules-container').textContent = 'Error loading rules.';
+                console.error('Error fetching JSON:', error);
+            });
+    </script>
 </body>
 </html>
