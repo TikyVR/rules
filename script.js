@@ -1,3 +1,18 @@
+// Functionality for Tab Navigation
+document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const tabId = button.getAttribute('data-tab');
+
+        // Remove active class from all buttons and tabs
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+        // Add active class to the clicked button and corresponding tab content
+        button.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+    });
+});
+
 // Fetching and displaying the rules
 fetch('./rules.json')
     .then(response => response.json())
