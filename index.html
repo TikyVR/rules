@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stealth Rules</title>
+    <title>StealthRP Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans&family=Oswald:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
-        <h1>StealthRP Rules</h1>
+        <h1>StealthRP Dashboard</h1>
     </header>
 
-    <main id="rules-container">
-        <h2>Roadmap</h2>
-        <div id="roadmap">
-            <div class="column" id="todo"><h3>To Do</h3></div>
-            <div class="column" id="in-progress"><h3>In Progress</h3></div>
-            <div class="column" id="completed"><h3>Completed</h3></div>
-        </div>
-        <p>Loading rules...</p>
+    <nav class="tabs">
+        <button class="tab-button active" data-tab="rules">Rules</button>
+        <button class="tab-button" data-tab="roadmap">Roadmap</button>
+        <button class="tab-button" data-tab="feedback">Feedback</button>
+    </nav>
+
+    <main>
+        <section id="rules" class="tab-content active">
+            <h2>Rules</h2>
+            <div id="rules-container">
+                <p>Loading rules...</p>
+            </div>
+        </section>
+
+        <section id="roadmap" class="tab-content">
+            <h2>Roadmap</h2>
+            <div id="roadmap">
+                <div class="column" id="todo"><h3>To Do</h3></div>
+                <div class="column" id="in-progress"><h3>In Progress</h3></div>
+                <div class="column" id="completed"><h3>Completed</h3></div>
+            </div>
+        </section>
+
+        <section id="feedback" class="tab-content">
+            <h2>Feedback</h2>
+            <div id="feedback-panel">
+                <form id="feedback-form">
+                    <textarea rows="4" placeholder="Your feedback..." required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 StealthRP. All Rights Reserved.</p>
     </footer>
 
-    <div id="feedback-panel">
-        <h3>Feedback</h3>
-        <form id="feedback-form">
-            <textarea rows="4" placeholder="Your feedback..." required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-
     <script src="./scripts.js"></script>
 </body>
 </html>
-
